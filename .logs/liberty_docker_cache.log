@@ -1,0 +1,89 @@
+Pulling the latest websphere-liberty:webProfile7 docker image
+webProfile7: Pulling from library/websphere-liberty
+Digest: sha256:2e24a8ee931d7f7967faa8e6ae3178c4c66668138f7e3bfc4c92fdffc83a390f
+Status: Image is up to date for websphere-liberty:webProfile7
+Pre-building the Liberty app image
+Sending build context to Docker daemon   12.8kB
+Step 1/18 : FROM websphere-liberty:webProfile7
+ ---> 097bf65e3e96
+Step 2/18 : LABEL maintainer="IBM Java Engineering at IBM Cloud"
+ ---> Running in 889ca7369108
+Removing intermediate container 889ca7369108
+ ---> a5070a218a3d
+Step 3/18 : COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+ ---> 726fe7227b71
+Step 4/18 : COPY /target/liberty/wlp/usr/shared/resources /config/resources/
+ ---> 24da8678a1ca
+Step 5/18 : COPY /src/main/liberty/config/jvmbx.options /config/jvm.options
+ ---> ebec4e958960
+Step 6/18 : USER root
+ ---> Running in 51bd169a7e34
+Removing intermediate container 51bd169a7e34
+ ---> c7c15c588ada
+Step 7/18 : RUN chmod g+w /config/apps
+ ---> Running in 28862a48c623
+Removing intermediate container 28862a48c623
+ ---> 3867ce23464f
+Step 8/18 : USER 1001
+ ---> Running in 89fdb4ec8399
+Removing intermediate container 89fdb4ec8399
+ ---> 04943bda0697
+Step 9/18 : RUN installUtility install --acceptLicense defaultServer && installUtility install --acceptLicense apmDataCollector-7.4
+ ---> Running in dcef7e93e521
+Checking for missing features required by the server ...
+The server does not require any additional features.  No features were installed.
+
+Start product validation...
+Product validation completed successfully.
+Establishing a connection to the configured repositories ...
+This process might take several minutes to complete.
+
+Successfully connected to all configured repositories.
+
+Preparing assets for installation. This process might take several minutes to complete.
+The --acceptLicense argument was found. This indicates that you have
+accepted the terms of the license agreement.
+
+
+Step 1 of 4: Downloading apmDataCollector-7.4 ...
+Step 2 of 4: Installing apmDataCollector-7.4 ...
+Step 3 of 4: Validating installed fixes ...
+Step 4 of 4: Cleaning up temporary files ...
+
+
+All assets were successfully installed.
+
+Start product validation...
+Product validation completed successfully.
+Removing intermediate container dcef7e93e521
+ ---> 580781235ae7
+Step 10/18 : ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/lib:/opt/ibm/wlp/usr/extension/liberty_dc/toolkit/lib/lx8266  JVM_ARGS="$JVM_ARGS -agentlib:am_ibm_16=defaultServer -Xbootclasspath/p:/opt/ibm/wlp/usr/extension/liberty_dc/toolkit/lib/bcm-bootstrap.jar -Xverbosegclog:/logs/gc.log,1,10000 -verbosegc -Djava.security.policy=/opt/ibm/wlp/usr/extension/liberty_dc/itcamdc/etc/datacollector.policy -Dliberty.home=/opt/ibm/wlp"
+ ---> Running in 37486123eb76
+Removing intermediate container 37486123eb76
+ ---> e09a9809634b
+Step 11/18 : ARG LICENSE_JAR_URL
+ ---> Running in 53536501fe3d
+Removing intermediate container 53536501fe3d
+ ---> 90b601f2be09
+Step 12/18 : RUN   if [ $LICENSE_JAR_URL ]; then     wget $LICENSE_JAR_URL -O /tmp/license.jar     && java -jar /tmp/license.jar -acceptLicense /opt/ibm     && rm /tmp/license.jar;   fi
+ ---> Running in 6629feed96f4
+Removing intermediate container 6629feed96f4
+ ---> 27279595a75b
+Step 13/18 : ENV JAVA_VERSION_PREFIX 1.8.0
+ ---> Running in 5c43148adccf
+Removing intermediate container 5c43148adccf
+ ---> fddb0efa0460
+Step 14/18 : ENV HOME /home/default
+ ---> Running in f61361e53363
+Removing intermediate container f61361e53363
+ ---> a791c9a8e1eb
+Step 15/18 : RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     ESUM=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;n;p}' | sed -n 's/\s*sha256sum:\s//p' | tr -d '\r' | tail -1);     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r' | tail -1);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=$HOME/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p $HOME/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd $HOME/java/jre/lib;     rm -rf icc;
+ ---> Running in 111eff661aef
+[91m+ dpkg --print-architecture
+[0m[91m+ ARCH=amd64
++ YML_FILE=sdk/linux/x86_64/index.yml
++ BASE_URL=https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/
++ wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta//sdk/linux/x86_64/index.yml
+[0m[91m/bin/sh: 1: wget: not found
+[0mThe command '/bin/sh -c set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     ESUM=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;n;p}' | sed -n 's/\s*sha256sum:\s//p' | tr -d '\r' | tail -1);     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r' | tail -1);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=$HOME/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p $HOME/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd $HOME/java/jre/lib;     rm -rf icc;' returned a non-zero code: 127
+Failed to build the liberty app image

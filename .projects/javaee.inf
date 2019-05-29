@@ -1,0 +1,43 @@
+{
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "name": "javaee",
+  "microclimateVersion": "19.03",
+  "language": "java",
+  "host": "",
+  "ports": "",
+  "applicationPort": 9080,
+  "workspace": "/microclimate-workspace/admin/",
+  "directory": "javaee",
+  "infLockFlag": true,
+  "locOnDisk": "/microclimate-workspace/javaee",
+  "loadTestPath": "/microclimate-workspace/admin/javaee/load-test",
+  "startMode": "run",
+  "buildType": "liberty",
+  "buildLogPath": "/microclimate-workspace/.logs/javaee-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/docker.build.log",
+  "state": "open",
+  "autoBuild": false,
+  "exporter": {
+    "workspace": "/microclimate-workspace/admin/javaee",
+    "git": {},
+    "secure": true
+  },
+  "metricsAvailable": true,
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Building container image",
+  "appStatus": "stopped",
+  "projectType": "liberty",
+  "location": "/microclimate-workspace/javaee",
+  "operation": {
+    "operationId": "c251e5c76047d2ec9a68db1a6a8e313c",
+    "type": "validate",
+    "projectInfo": {
+      "projectType": "liberty",
+      "location": "/microclimate-workspace/javaee",
+      "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619"
+    }
+  },
+  "validationStatus": "success",
+  "validationResults": [],
+  "status": "success",
+  "podName": ""
+}

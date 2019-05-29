@@ -1,0 +1,17 @@
+extensionId: springJavaTemplate
+buildType: spring
+language: java
+creationType: template
+info:
+    provider: IBM
+    version: 1.0.0
+userInterface:
+    label: Spring
+    description: 'Template for building a Spring microservice'
+template:
+    giturl: https://github.com/microclimate-dev2ops/springJavaTemplate
+    gitbranch: master
+    localpath:
+application:
+    port: 8080
+    contextroot: null

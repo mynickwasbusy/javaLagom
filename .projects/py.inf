@@ -1,0 +1,39 @@
+{
+  "projectID": "cad6c6a0-81f3-11e9-b0d3-6dfb45e8d619",
+  "name": "py",
+  "microclimateVersion": "19.03",
+  "language": "python",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "30395",
+    "internalPort": "5000"
+  },
+  "applicationPort": 5000,
+  "workspace": "/microclimate-workspace/admin/",
+  "directory": "py",
+  "infLockFlag": true,
+  "locOnDisk": "/microclimate-workspace/py",
+  "loadTestPath": "/microclimate-workspace/admin/py/load-test",
+  "buildType": "docker",
+  "buildLogPath": "/microclimate-workspace/.logs/py-cad6c6a0-81f3-11e9-b0d3-6dfb45e8d619/docker.build.log",
+  "state": "open",
+  "autoBuild": true,
+  "exporter": {
+    "workspace": "/microclimate-workspace/admin/py",
+    "git": {},
+    "secure": true
+  },
+  "metricsAvailable": false,
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "appStatus": "started",
+  "appImageLastBuild": "1559122003578",
+  "lastbuild": 1559122013366,
+  "appErrorStatus": " ",
+  "projectType": "docker",
+  "location": "/microclimate-workspace/py",
+  "validationStatus": "success",
+  "validationResults": [],
+  "podName": "mc-py-cad6c6a0-81f3-11e9-b0d3-6666f9b757-nr9gf",
+  "logs": {}
+}

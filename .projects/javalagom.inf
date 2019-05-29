@@ -1,0 +1,41 @@
+{
+  "projectID": "b424b730-81f0-11e9-b0d3-6dfb45e8d619",
+  "name": "javalagom",
+  "microclimateVersion": "19.03",
+  "language": "java",
+  "contextroot": "api/hello/world",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "32581",
+    "internalPort": "9000"
+  },
+  "applicationPort": 9000,
+  "workspace": "/microclimate-workspace/admin/",
+  "directory": "javalagom",
+  "infLockFlag": true,
+  "locOnDisk": "/microclimate-workspace/javalagom",
+  "loadTestPath": "/microclimate-workspace/admin/javalagom/load-test",
+  "startMode": "run",
+  "buildType": "docker",
+  "buildLogPath": "/microclimate-workspace/.logs/javalagom-b424b730-81f0-11e9-b0d3-6dfb45e8d619/docker.build.log",
+  "state": "open",
+  "autoBuild": true,
+  "exporter": {
+    "workspace": "/microclimate-workspace/admin/javalagom",
+    "git": {},
+    "secure": true
+  },
+  "metricsAvailable": false,
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "appStatus": "started",
+  "appImageLastBuild": "1559121199671",
+  "lastbuild": 1559121218766,
+  "appErrorStatus": " ",
+  "projectType": "docker",
+  "location": "/microclimate-workspace/javalagom",
+  "validationStatus": "success",
+  "validationResults": [],
+  "podName": "mc-javalagom-b424b730-81f0-11e9-b0d3-7d4cbb87f9-x7pv9",
+  "logs": {}
+}

@@ -1,0 +1,17 @@
+extensionId: javaMicroProfileTemplate
+buildType: liberty
+language: java
+creationType: template
+info:
+    provider: IBM
+    version: 1.0.0
+userInterface:
+    label: MicroProfile / Java EE
+    description: 'Template for building a MicroProfile / Java EE microservice'
+template:
+    giturl: https://github.com/microclimate-dev2ops/javaMicroProfileTemplate
+    gitbranch: master
+    localpath:
+application:
+    port: 9080
+    contextroot: null

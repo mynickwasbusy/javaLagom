@@ -1,0 +1,140 @@
+Sending build context to Docker daemon  230.8MB
+Step 1/22 : FROM websphere-liberty@sha256:e99527c9275af659208e8ee28c9935f2f6c88cf24cf1819558578d8ddbcad112
+ ---> 8ae2ee85af20
+Step 2/22 : LABEL maintainer="IBM Java Engineering at IBM Cloud"
+ ---> Running in d0ffa7ad3063
+Removing intermediate container d0ffa7ad3063
+ ---> 74aeacb98bfe
+Step 3/22 : COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+ ---> 72a89b46a446
+Step 4/22 : COPY /target/liberty/wlp/usr/shared/resources /config/resources/
+ ---> b2119aa3a8ec
+Step 5/22 : COPY /src/main/liberty/config/jvmbx.options /config/jvm.options
+ ---> aa41a0c6e8ac
+Step 6/22 : USER root
+ ---> Running in ff4f5b1b34dd
+Removing intermediate container ff4f5b1b34dd
+ ---> 0ef84865b542
+Step 7/22 : RUN chmod g+w /config/apps
+ ---> Running in 694fff72707a
+Removing intermediate container 694fff72707a
+ ---> 3ebfe306d499
+Step 8/22 : RUN configure.sh
+ ---> Running in 5c81b869f5e2
+[91m+ WLP_INSTALL_DIR=/opt/ibm/wlp
++ SHARED_CONFIG_DIR=/opt/ibm/wlp/usr/shared/config
++ SHARED_RESOURCE_DIR=/opt/ibm/wlp/usr/shared/resources
++ SNIPPETS_SOURCE=/opt/ibm/helpers/build/configuration_snippets
++ SNIPPETS_TARGET=/config/configDropins/overrides
+[0m[91m+ mkdir -p /config/configDropins/overrides
+[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ '[' '' == client ']'
++ '[' '' == embedded ']'
++ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ installUtility install --acceptLicense defaultServer
+[0mChecking for missing features required by the server ...
+The server does not require any additional features.  No features were installed.
+
+Start product validation...
+Product validation completed successfully.
+[91m+ find /opt/ibm/fixes -type f -name '*.jar' -print0
+[0m[91m+ sort -z
+[0m[91m+ xargs -0 -n 1 -r -I '{}' java -jar '{}' --installLocation /opt/ibm/wlp
+[0mApplying fix to Liberty install directory at /opt/ibm/wlp now.
+	lib/com.ibm.ws.transport.http_1.0.26.cl190320190326-2024.jar
+Fix has been applied successfully.
+Successfully extracted all product files.
+Removing intermediate container 5c81b869f5e2
+ ---> 28323e3170e8
+Step 9/22 : USER 1001
+ ---> Running in 2d3070f503ef
+Removing intermediate container 2d3070f503ef
+ ---> 2818e47d922d
+Step 10/22 : ENV JAVA_VERSION_PREFIX 1.8.0
+ ---> Running in c59e6e826fc9
+Removing intermediate container c59e6e826fc9
+ ---> edb4607d0e6b
+Step 11/22 : ENV HOME /home/default
+ ---> Running in e9cd999fba98
+Removing intermediate container e9cd999fba98
+ ---> 418c7afa7467
+Step 12/22 : USER root
+ ---> Running in 6b24600a33ce
+Removing intermediate container 6b24600a33ce
+ ---> a93000b3f211
+Step 13/22 : RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     apt-get update     && apt-get install -y --no-install-recommends wget openssl     && rm -rf /var/lib/apt/lists/*;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     ESUM=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;n;p}' | sed -n 's/\s*sha256sum:\s//p' | tr -d '\r' | tail -1);     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r' | tail -1);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=$HOME/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p $HOME/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd $HOME/java/jre/lib;     rm -rf icc;     mkdir -p $HOME/mvn &&    MAVEN_VERSION=$(wget -qO- https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | sed -n 's/\s*<release>\(.*\)<.*>/\1/p') &&    wget -q -U UA_IBM_JAVA_Docker -O $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz https://search.maven.org/remotecontent?filepath=org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz &&    tar xf $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C $HOME/mvn &&    mv $HOME/mvn/apache-maven-${MAVEN_VERSION} $HOME/mvn/apache-maven &&    rm -f $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz;     apt-get purge --auto-remove -y wget;     rm -rf /var/lib/apt/lists/*;
+ ---> Running in ca38328816db
+[91m+ dpkg --print-architecture
+[0m[91m+ ARCH=amd64
++ YML_FILE=sdk/linux/x86_64/index.yml
++ apt-get update
+[0mGet:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+Get:2 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [828 kB]
+Get:3 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]
+Get:4 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [554 kB]
+Get:5 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6113 B]
+Get:6 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+Get:7 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+Get:8 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+Get:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+Get:10 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+Get:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+Get:12 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+Get:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1237 kB]
+Get:14 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
+Get:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [966 kB]
+Get:16 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.1 kB]
+Get:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7942 B]
+Get:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8532 B]
+Fetched 15.8 MB in 2min 15s (117 kB/s)
+Reading package lists...
+[91m+ apt-get install -y --no-install-recommends wget openssl
+[0mReading package lists...
+Building dependency tree...
+Reading state information...
+openssl is already the newest version (1.0.2g-1ubuntu4.15).
+openssl set to manually installed.
+The following NEW packages will be installed:
+  libidn11 wget
+0 upgraded, 2 newly installed, 0 to remove and 10 not upgraded.
+Need to get 345 kB of archives.
+After this operation, 1151 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libidn11 amd64 1.32-3ubuntu1.2 [46.5 kB]
+Get:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 wget amd64 1.17.1-1ubuntu1.5 [299 kB]
+[91mdebconf: delaying package configuration, since apt-utils is not installed
+[0mFetched 345 kB in 8s (41.5 kB/s)
+Selecting previously unselected package libidn11:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5066 files and directories currently installed.)
+Preparing to unpack .../libidn11_1.32-3ubuntu1.2_amd64.deb ...
+Unpacking libidn11:amd64 (1.32-3ubuntu1.2) ...
+Selecting previously unselected package wget.
+Preparing to unpack .../wget_1.17.1-1ubuntu1.5_amd64.deb ...
+Unpacking wget (1.17.1-1ubuntu1.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+Setting up libidn11:amd64 (1.32-3ubuntu1.2) ...
+Setting up wget (1.17.1-1ubuntu1.5) ...
+Processing triggers for libc-bin (2.23-0ubuntu11) ...
+[91m+ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_universe_binary-amd64_Packages.lz4
+[0m[91m+ BASE_URL=https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/
++ wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta//sdk/linux/x86_64/index.yml
+[0m[91m+ cat /tmp/index.yml
+[0m[91m+ sed -n /1.8.0/{n;n;p}
+[0m[91m+ sed -n s/\s*sha256sum:\s//p
+[0m[91m+ tr -d \r
++ tail -1
+[0m[91m+ ESUM=548b35eb9677915df6819f9375567736de2ba6862e50ab1685a06becc943fa00
+[0m[91m+ cat /tmp/index.yml
++ sed -n /1.8.0/{n;p}
++ sed -n s/\s*uri:\s//p
++ tr -d \r
++ tail -1
+[0m[91m+ JAVA_URL=https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.5.36/linux/x86_64/ibm-java-sdk-8.0-5.36-x86_64-archive.bin
++ wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.5.36/linux/x86_64/ibm-java-sdk-8.0-5.36-x86_64-archive.bin
+[0m

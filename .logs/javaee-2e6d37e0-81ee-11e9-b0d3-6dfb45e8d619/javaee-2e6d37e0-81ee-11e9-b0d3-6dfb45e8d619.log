@@ -1,0 +1,563 @@
+
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mCreating project /microclimate-workspace/javaee
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mThe generated image ID is: 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-liberty-bc13ea9461c6559abd8ec0aad6eda7dca1b0311a
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mProject data directory: /fwdata/projects/
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mInitial start mode for project 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 is: run
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\"}"}
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mFinished writing file /fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39moperationId: f8406476383191cc9146a33c160841fc
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mPushing project to build queue
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mChecking for required files
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mChecking for required file /Dockerfile | /Dockerfile-lang
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mChecking for required file /Dockerfile-build
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mChecking for required file /pom.xml
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mChecking for required file /src/main/liberty/config/server.xml
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mSetting rank for projectID 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619: 1/1
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mBeginning build for 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mCreating container for liberty project /microclimate-workspace/javaee
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mThe log name for 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 is mc-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-bc13ea9461c65
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mContainer name: mc-javaee-2e6d37e0-81ee-11e9-b0d3
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mLog name: mc-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-bc13ea9461c65
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false}"}
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mIn K8 environment: true
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mNow tracking running process 1540 for project 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mBuild state changed for project: 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 from: unknown, to: queued, with message: projectStatusController.buildRank
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "queued",
+  "detailedBuildStatus": "Rank 1/1"
+}
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mBuild began for 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mBuild state changed for project: 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 from: queued, to: inProgress, with message: projectStatusController.buildStarted
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Build started"
+}
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39mHanding create operation to the selected project handler
+[32m[INFO Wed May 29 09:02:55 UTC 2019 | Project: javaee] [39m*** JAVA
+*** PWD = /server
+*** ROOT = /microclimate-workspace/javaee
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** PROJECT_ID = 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+*** COMMAND = create
+*** CONTAINER_NAME = mc-javaee-2e6d37e0-81ee-11e9-b0d3
+*** START_MODE = run
+*** DEBUG_PORT = 7777
+*** HOST_OS = 
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mSending update state post for project 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 and state stopped
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mchown .logs and project root dir for user 1001
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mFirst time setup of app /microclimate-workspace/javaee
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mApplication state changed for project: 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 from: unknown, to: stopped
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopped"
+}
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:02:56 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39m* Switched to Development mode.
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39mLocal workspace origin is set to /microclimate-workspace
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+[32m[INFO Wed May 29 09:02:59 UTC 2019 | Project: javaee] [39m
+appPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:00 UTC 2019 | Project: javaee] [39mpingApplications: Application state error message: could not retrieve the port for the project
+[32m[INFO Wed May 29 09:03:02 UTC 2019 | Project: javaee] [39mEmitting event over socket 
+ message: projectSettingsChanged
+ data: {
+  "operationId": "undefined",
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "name": "watchedFiles",
+  "status": "success"
+}
+[32m[INFO Wed May 29 09:03:02 UTC 2019 | Project: javaee] [39mIDC options set.
+
+[32m[INFO Wed May 29 09:03:02 UTC 2019 | Project: javaee] [39mThe application container and image name is set to mc-javaee-2e6d37e0-81ee-11e9-b0d3
+[32m[INFO Wed May 29 09:03:02 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:02 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+
+[32m[INFO Wed May 29 09:03:03 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:03 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:04 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:04 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39mThe application log name is set to mc-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-bc13ea9461c65
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:05 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:07 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:07 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:08 UTC 2019 | Project: javaee] [39mThe project id is set to 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+
+[32m[INFO Wed May 29 09:03:08 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:03:08 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:08 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:08 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:10 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:10 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39mThe docker registry is set to mycluster.icp:8500/microclimate
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:11 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:13 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:13 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:14 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:14 UTC 2019 | Project: javaee] [39mThe start mode is set to run
+[32m[INFO Wed May 29 09:03:14 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:03:14 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:15 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:15 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:17 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:17 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:18 UTC 2019 | Project: javaee] [39mThe debug port is set to 7777
+
+[32m[INFO Wed May 29 09:03:18 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+
+[32m[INFO Wed May 29 09:03:18 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+[32m[INFO Wed May 29 09:03:18 UTC 2019 | Project: javaee] [39m
+appPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+[32m[INFO Wed May 29 09:03:18 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:20 UTC 2019 | Project: javaee] [39mIDC options set.
+[32m[INFO Wed May 29 09:03:20 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:20 UTC 2019 | Project: javaee] [39midc build started for /microclimate-workspace/javaee Wed May 29 09:03:20 UTC 2019
+
+[32m[INFO Wed May 29 09:03:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:21 UTC 2019 | Project: javaee] [39mConfiguration file detected: 
+[32m[INFO Wed May 29 09:03:21 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:21 UTC 2019 | Project: javaee] [39mlibertyEnv : microclimate
+
+[32m[INFO Wed May 29 09:03:21 UTC 2019 | Project: javaee] [39mappPrefix : microclimate-dev-liberty-
+idcBasePath : /microclimate-workspace
+
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39mSelected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39m
+Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39m* Container build is required.
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39mBuilding container image
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:23 UTC 2019 | Project: javaee] [39mUpdating build state for project javaee(2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619) to: inProgress
+
+[32m[INFO Wed May 29 09:03:30 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mBuild state changed for project: 2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619 from: inProgress, to: inProgress, with message: containerBuildTask.containerBuild
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Building container image"
+}
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mSelected Dockerfile from Dockerfile list [Dockerfile, Dockerfile-lang, Dockerfile-dev] is: Dockerfile
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39m
+Selected Dockerfile from Dockerfile list [Dockerfile-dev-build, Dockerfile-build] is: Dockerfile-build
+
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mmerging: Dockerfile
+
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mmerging: Dockerfile-build
+
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mmerging: Dockerfile-dev-setup
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mGenerated Dockerfile for development: /microclimate-workspace/.idc/docker/docker-bc13ea9461c6559abd8ec0aad6eda7dca1b0311a/Dockerfile-idc
+
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39mCopying file from /microclimate-workspace/javaee/src/main/liberty/config/jvmbx.options to /microclimate-workspace/.idc/docker/docker-bc13ea9461c6559abd8ec0aad6eda7dca1b0311a/src/main/liberty/config/jvmbx.options
+[32m[INFO Wed May 29 09:03:32 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:34 UTC 2019 | Project: javaee] [39m*** Build Command /idc/artifacts/build_docker_image.sh /microclimate-workspace/javaee mc-javaee-2e6d37e0-81ee-11e9-b0d3 /microclimate-workspace/.idc/docker/docker-bc13ea9461c6559abd8ec0aad6eda7dca1b0311a mc-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-bc13ea9461c65 javaee-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+
+[32m[INFO Wed May 29 09:03:37 UTC 2019 | Project: javaee] [39mBuild app image using cmd: /idc/artifacts/build_docker_image.sh /microclimate-workspace/javaee mc-javaee-2e6d37e0-81ee-11e9-b0d3 /microclimate-workspace/.idc/docker/docker-bc13ea9461c6559abd8ec0aad6eda7dca1b0311a mc-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619-bc13ea9461c65 javaee-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:03:37 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:37 UTC 2019 | Project: javaee] [39mDocker build log file /microclimate-workspace/.logs/javaee-2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/docker.build.log
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39mSending build context to Docker daemon  230.8MB
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39mStep 1/22 : FROM websphere-liberty@sha256:e99527c9275af659208e8ee28c9935f2f6c88cf24cf1819558578d8ddbcad112
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39m ---> 8ae2ee85af20
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39mStep 2/22 : LABEL maintainer="IBM Java Engineering at IBM Cloud"
+
+[32m[INFO Wed May 29 09:03:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:41 UTC 2019 | Project: javaee] [39m ---> Running in d0ffa7ad3063
+
+[32m[INFO Wed May 29 09:03:41 UTC 2019 | Project: javaee] [39mRemoving intermediate container d0ffa7ad3063
+
+[32m[INFO Wed May 29 09:03:41 UTC 2019 | Project: javaee] [39m ---> 74aeacb98bfe
+Step 3/22 : COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+
+[32m[INFO Wed May 29 09:03:42 UTC 2019 | Project: javaee] [39m ---> 72a89b46a446
+
+[32m[INFO Wed May 29 09:03:42 UTC 2019 | Project: javaee] [39mStep 4/22 : COPY /target/liberty/wlp/usr/shared/resources /config/resources/
+
+[32m[INFO Wed May 29 09:03:42 UTC 2019 | Project: javaee] [39m ---> b2119aa3a8ec
+
+[32m[INFO Wed May 29 09:03:42 UTC 2019 | Project: javaee] [39mStep 5/22 : COPY /src/main/liberty/config/jvmbx.options /config/jvm.options
+
+[32m[INFO Wed May 29 09:03:43 UTC 2019 | Project: javaee] [39m ---> aa41a0c6e8ac
+
+[32m[INFO Wed May 29 09:03:43 UTC 2019 | Project: javaee] [39mStep 6/22 : USER root
+
+[32m[INFO Wed May 29 09:03:43 UTC 2019 | Project: javaee] [39m ---> Running in ff4f5b1b34dd
+
+[32m[INFO Wed May 29 09:03:43 UTC 2019 | Project: javaee] [39mRemoving intermediate container ff4f5b1b34dd
+
+[32m[INFO Wed May 29 09:03:43 UTC 2019 | Project: javaee] [39m ---> 0ef84865b542
+Step 7/22 : RUN chmod g+w /config/apps
+
+[32m[INFO Wed May 29 09:03:44 UTC 2019 | Project: javaee] [39m ---> Running in 694fff72707a
+
+[32m[INFO Wed May 29 09:03:45 UTC 2019 | Project: javaee] [39mRemoving intermediate container 694fff72707a
+
+[32m[INFO Wed May 29 09:03:45 UTC 2019 | Project: javaee] [39m ---> 3ebfe306d499
+Step 8/22 : RUN configure.sh
+
+[32m[INFO Wed May 29 09:03:45 UTC 2019 | Project: javaee] [39m ---> Running in 5c81b869f5e2
+
+[32m[INFO Wed May 29 09:03:46 UTC 2019 | Project: javaee] [39m[91m+ WLP_INSTALL_DIR=/opt/ibm/wlp
+
+[32m[INFO Wed May 29 09:03:46 UTC 2019 | Project: javaee] [39m+ SHARED_CONFIG_DIR=/opt/ibm/wlp/usr/shared/config
++ SHARED_RESOURCE_DIR=/opt/ibm/wlp/usr/shared/resources
+
+[32m[INFO Wed May 29 09:03:46 UTC 2019 | Project: javaee] [39m+ SNIPPETS_SOURCE=/opt/ibm/helpers/build/configuration_snippets
++ SNIPPETS_TARGET=/config/configDropins/overrides
+
+[32m[INFO Wed May 29 09:03:46 UTC 2019 | Project: javaee] [39m[0m[91m+ mkdir -p /config/configDropins/overrides
+
+[32m[INFO Wed May 29 09:03:46 UTC 2019 | Project: javaee] [39m[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
+[0m[91m+ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ '[' '' == client ']'
++ '[' '' == embedded ']'
++ '[' '' == true ']'
++ '[' '' == true ']'
+[0m[91m+ installUtility install --acceptLicense defaultServer
+
+[32m[INFO Wed May 29 09:03:47 UTC 2019 | Project: javaee] [39m[0mChecking for missing features required by the server ...
+
+[32m[INFO Wed May 29 09:03:50 UTC 2019 | Project: javaee] [39mThe server does not require any additional features.  No features were installed.
+
+[32m[INFO Wed May 29 09:03:50 UTC 2019 | Project: javaee] [39m
+
+[32m[INFO Wed May 29 09:03:50 UTC 2019 | Project: javaee] [39mStart product validation...
+
+[32m[INFO Wed May 29 09:03:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39mProduct validation completed successfully.
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39m[91m+ find /opt/ibm/fixes -type f -name '*.jar' -print0
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39m[0m[91m+ sort -z
+[0m[91m+ xargs -0 -n 1 -r -I '{}' java -jar '{}' --installLocation /opt/ibm/wlp
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39m[0mApplying fix to Liberty install directory at /opt/ibm/wlp now.
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39m	lib/com.ibm.ws.transport.http_1.0.26.cl190320190326-2024.jar
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39mFix has been applied successfully.
+
+[32m[INFO Wed May 29 09:03:52 UTC 2019 | Project: javaee] [39mSuccessfully extracted all product files.
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39mRemoving intermediate container 5c81b869f5e2
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39m ---> 28323e3170e8
+Step 9/22 : USER 1001
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39m ---> Running in 2d3070f503ef
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39mRemoving intermediate container 2d3070f503ef
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39m ---> 2818e47d922d
+Step 10/22 : ENV JAVA_VERSION_PREFIX 1.8.0
+
+[32m[INFO Wed May 29 09:03:54 UTC 2019 | Project: javaee] [39m ---> Running in c59e6e826fc9
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39mRemoving intermediate container c59e6e826fc9
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39m ---> edb4607d0e6b
+Step 11/22 : ENV HOME /home/default
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39m ---> Running in e9cd999fba98
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39mRemoving intermediate container e9cd999fba98
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39m ---> 418c7afa7467
+Step 12/22 : USER root
+
+[32m[INFO Wed May 29 09:03:55 UTC 2019 | Project: javaee] [39m ---> Running in 6b24600a33ce
+
+[32m[INFO Wed May 29 09:03:56 UTC 2019 | Project: javaee] [39mRemoving intermediate container 6b24600a33ce
+
+[32m[INFO Wed May 29 09:03:56 UTC 2019 | Project: javaee] [39m ---> a93000b3f211
+
+[32m[INFO Wed May 29 09:03:56 UTC 2019 | Project: javaee] [39mStep 13/22 : RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     apt-get update     && apt-get install -y --no-install-recommends wget openssl     && rm -rf /var/lib/apt/lists/*;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     ESUM=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;n;p}' | sed -n 's/\s*sha256sum:\s//p' | tr -d '\r' | tail -1);     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r' | tail -1);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=$HOME/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p $HOME/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd $HOME/java/jre/lib;     rm -rf icc;     mkdir -p $HOME/mvn &&    MAVEN_VERSION=$(wget -qO- https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | sed -n 's/\s*<release>\(.*\)<.*>/\1/p') &&    wget -q -U UA_IBM_JAVA_Docker -O $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz https://search.maven.org/remotecontent?filepath=org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz &&    tar xf $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C $HOME/mvn &&    mv $HOME/mvn/apache-maven-${MAVEN_VERSION} $HOME/mvn/apache-maven &&    rm -f $HOME/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz;     apt-get purge --auto-remove -y wget;     rm -rf /var/lib/apt/lists/*;
+
+[32m[INFO Wed May 29 09:03:56 UTC 2019 | Project: javaee] [39m ---> Running in ca38328816db
+
+[32m[INFO Wed May 29 09:03:56 UTC 2019 | Project: javaee] [39m[91m+ dpkg --print-architecture
+
+[32m[INFO Wed May 29 09:03:57 UTC 2019 | Project: javaee] [39m[0m[91m+ ARCH=amd64
+
+[32m[INFO Wed May 29 09:03:57 UTC 2019 | Project: javaee] [39m+ YML_FILE=sdk/linux/x86_64/index.yml
++ apt-get update
+
+[32m[INFO Wed May 29 09:04:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:04:02 UTC 2019 | Project: javaee] [39m[0mGet:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]
+
+[32m[INFO Wed May 29 09:04:03 UTC 2019 | Project: javaee] [39mGet:2 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages [828 kB]
+
+[32m[INFO Wed May 29 09:04:05 UTC 2019 | Project: javaee] [39mGet:3 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages [12.7 kB]
+
+[32m[INFO Wed May 29 09:04:05 UTC 2019 | Project: javaee] [39mGet:4 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages [554 kB]
+
+[32m[INFO Wed May 29 09:04:08 UTC 2019 | Project: javaee] [39mGet:5 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages [6113 B]
+
+[32m[INFO Wed May 29 09:04:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:04:12 UTC 2019 | Project: javaee] [39mGet:6 http://archive.ubuntu.com/ubuntu xenial InRelease [247 kB]
+
+[32m[INFO Wed May 29 09:04:13 UTC 2019 | Project: javaee] [39mGet:7 http://archive.ubuntu.com/ubuntu xenial-updates InRelease [109 kB]
+
+[32m[INFO Wed May 29 09:04:13 UTC 2019 | Project: javaee] [39mGet:8 http://archive.ubuntu.com/ubuntu xenial-backports InRelease [107 kB]
+
+[32m[INFO Wed May 29 09:04:13 UTC 2019 | Project: javaee] [39mGet:9 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages [1558 kB]
+
+[32m[INFO Wed May 29 09:04:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:04:24 UTC 2019 | Project: javaee] [39mGet:10 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages [14.1 kB]
+
+[32m[INFO Wed May 29 09:04:24 UTC 2019 | Project: javaee] [39mGet:11 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages [9827 kB]
+
+[32m[INFO Wed May 29 09:04:30 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:30 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:44 UTC 2019 | Project: javaee] [39mGet:12 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages [176 kB]
+
+[32m[INFO Wed May 29 09:05:47 UTC 2019 | Project: javaee] [39mGet:13 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [1237 kB]
+
+[32m[INFO Wed May 29 09:05:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:05:56 UTC 2019 | Project: javaee] [39mGet:14 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages [13.1 kB]
+
+[32m[INFO Wed May 29 09:05:56 UTC 2019 | Project: javaee] [39mGet:15 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [966 kB]
+
+[32m[INFO Wed May 29 09:06:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:06:11 UTC 2019 | Project: javaee] [39mGet:16 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages [19.1 kB]
+
+[32m[INFO Wed May 29 09:06:12 UTC 2019 | Project: javaee] [39mGet:17 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages [7942 B]
+
+[32m[INFO Wed May 29 09:06:12 UTC 2019 | Project: javaee] [39mGet:18 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages [8532 B]
+
+[32m[INFO Wed May 29 09:06:12 UTC 2019 | Project: javaee] [39mFetched 15.8 MB in 2min 15s (117 kB/s)
+
+[32m[INFO Wed May 29 09:06:13 UTC 2019 | Project: javaee] [39mReading package lists...
+
+[32m[INFO Wed May 29 09:06:13 UTC 2019 | Project: javaee] [39m[91m+ apt-get install -y --no-install-recommends wget openssl
+
+[32m[INFO Wed May 29 09:06:14 UTC 2019 | Project: javaee] [39m[0mReading package lists...
+
+[32m[INFO Wed May 29 09:06:15 UTC 2019 | Project: javaee] [39mBuilding dependency tree...
+
+[32m[INFO Wed May 29 09:06:15 UTC 2019 | Project: javaee] [39mReading state information...
+
+[32m[INFO Wed May 29 09:06:15 UTC 2019 | Project: javaee] [39mopenssl is already the newest version (1.0.2g-1ubuntu4.15).
+
+[32m[INFO Wed May 29 09:06:15 UTC 2019 | Project: javaee] [39mopenssl set to manually installed.
+The following NEW packages will be installed:
+
+[32m[INFO Wed May 29 09:06:15 UTC 2019 | Project: javaee] [39m  libidn11 wget
+
+[32m[INFO Wed May 29 09:06:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m0 upgraded, 2 newly installed, 0 to remove and 10 not upgraded.
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mNeed to get 345 kB of archives.
+After this operation, 1151 kB of additional disk space will be used.
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mGet:1 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 libidn11 amd64 1.32-3ubuntu1.2 [46.5 kB]
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mGet:2 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 wget amd64 1.17.1-1ubuntu1.5 [299 kB]
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m[91mdebconf: delaying package configuration, since apt-utils is not installed
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m[0mFetched 345 kB in 8s (41.5 kB/s)
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mSelecting previously unselected package libidn11:amd64.
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 5%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 10%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 15%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 20%
+(Reading database ... 25%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 80%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 85%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 90%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 95%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 100%
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39m(Reading database ... 5066 files and directories currently installed.)
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mPreparing to unpack .../libidn11_1.32-3ubuntu1.2_amd64.deb ...
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mUnpacking libidn11:amd64 (1.32-3ubuntu1.2) ...
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mSelecting previously unselected package wget.
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mPreparing to unpack .../wget_1.17.1-1ubuntu1.5_amd64.deb ...
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mUnpacking wget (1.17.1-1ubuntu1.5) ...
+
+[32m[INFO Wed May 29 09:06:23 UTC 2019 | Project: javaee] [39mProcessing triggers for libc-bin (2.23-0ubuntu11) ...
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39mSetting up libidn11:amd64 (1.32-3ubuntu1.2) ...
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39mSetting up wget (1.17.1-1ubuntu1.5) ...
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39mProcessing triggers for libc-bin (2.23-0ubuntu11) ...
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39m[91m+ rm -rf /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-backports_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial-updates_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_InRelease /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_xenial_universe_binary-amd64_Packages.lz4 /var/lib/apt/lists/lock /var/lib/apt/lists/partial /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_InRelease /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_main_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_multiverse_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_restricted_binary-amd64_Packages.lz4 /var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_xenial-security_universe_binary-amd64_Packages.lz4
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39m[0m[91m+ BASE_URL=https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/
+
+[32m[INFO Wed May 29 09:06:24 UTC 2019 | Project: javaee] [39m+ wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta//sdk/linux/x86_64/index.yml
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ sed -n /1.8.0/{n;n;p}
+[0m[91m+ sed -n s/\s*sha256sum:\s//p
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ cat /tmp/index.yml
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ tr -d \r
++ tail -1
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ ESUM=548b35eb9677915df6819f9375567736de2ba6862e50ab1685a06becc943fa00
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ cat /tmp/index.yml
++ sed -n /1.8.0/{n;p}
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m+ sed -n s/\s*uri:\s//p
++ tr -d \r
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m+ tail -1
+
+[32m[INFO Wed May 29 09:06:33 UTC 2019 | Project: javaee] [39m[0m[91m+ JAVA_URL=https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.5.36/linux/x86_64/ibm-java-sdk-8.0-5.36-x86_64-archive.bin
++ wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/8.0.5.36/linux/x86_64/ibm-java-sdk-8.0-5.36-x86_64-archive.bin
+
+[32m[INFO Wed May 29 09:06:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:06:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:07:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:07:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:07:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:08:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:08:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:08:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:08:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:09:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:09:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:09:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:10:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:10:30 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:10:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:11:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:11:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:11:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:11:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:13:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:13:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:13:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:26:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:26:20 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:26:40 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:26:50 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:27:00 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 09:27:10 UTC 2019 | Project: javaee] [39mPod name was not found while looking up service information for project.

@@ -1,0 +1,731 @@
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mCreating project /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mThe generated image ID is: a24146d0-81ed-11e9-b0d3-6dfb45e8d619-spring-7b05a337ba75ef50c1700e6ff0eb8abcc189a918
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mProject data directory: /fwdata/projects/
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mInitial start mode for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is: run
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\"}"}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mFinished writing file /fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39moperationId: 426c04914d98f8483bdd470bb8490295
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mPushing project to build queue
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mChecking for required files
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mChecking for required file /Dockerfile
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mChecking for required file /pom.xml
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mCreating container for spring project /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mThe log name for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mContainer name: mc-javaempty-a24146d0-81ed-11e9-b0d3
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mLog name: mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false}"}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mIn K8 environment: true
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mNow tracking running process 189 for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mSetting rank for projectID a24146d0-81ed-11e9-b0d3-6dfb45e8d619: 1/1
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mBeginning build for a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: unknown, to: queued, with message: projectStatusController.buildRank
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "queued",
+  "detailedBuildStatus": "Rank 1/1"
+}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mBuild began for a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: queued, to: inProgress, with message: projectStatusController.buildStarted
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Build started"
+}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mHanding create operation to the selected project handler
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m*** JAVA
+*** PWD = /server
+*** ROOT = /microclimate-workspace/javaempty
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** PROJECT_ID = a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** COMMAND = create
+*** CONTAINER_NAME = mc-javaempty-a24146d0-81ed-11e9-b0d3
+*** START_MODE = run
+*** DEBUG_PORT = 7777
+*** FOLDER_NAME = javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** LOG_FOLDER = /microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+project=mc-javaempty-a24146d0-81ed-11e9-b0d3
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state stopped
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mInitializing cache for: javaempty
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m/microclimate-workspace/javaempty/microclimate-stop-watching-flag
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mInitializing project m2 cache
+Extracting m2 cache for /microclimate-workspace/javaempty
+
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: unknown, to: stopped
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopped"
+}
+[32m[INFO Wed May 29 08:42:04 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:42:09 UTC 2019 | Project: javaempty] [39mFinished extracting m2 cache for /microclimate-workspace/javaempty
+
+[32m[INFO Wed May 29 08:42:09 UTC 2019 | Project: javaempty] [39mm2 cache is set up for /microclimate-workspace/javaempty
+
+[32m[INFO Wed May 29 08:42:09 UTC 2019 | Project: javaempty] [39mwrote /tmp/javaempty/javaempty/templates/service.yaml
+
+[32m[INFO Wed May 29 08:42:09 UTC 2019 | Project: javaempty] [39mwrote /tmp/javaempty/javaempty/templates/deployment.yaml
+
+[32m[INFO Wed May 29 08:42:10 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectSettingsChanged
+ data: {
+  "operationId": "undefined",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "name": "watchedFiles",
+  "status": "success"
+}
+[32m[INFO Wed May 29 08:42:10 UTC 2019 | Project: javaempty] [39mError: Must provide <filename> <path_to_update> <value>
+
+[32m[INFO Wed May 29 08:42:10 UTC 2019 | Project: javaempty] [39mUsage:
+  yq write [yaml_file] [path] [value] [flags]
+
+Aliases:
+  write, w
+
+Examples:
+
+yq write things.yaml a.b.c cat
+yq write --inplace things.yaml a.b.c cat
+yq w -i things.yaml a.b.c cat
+yq w --script update_script.yaml things.yaml
+yq w -i -s update_script.yaml things.yaml
+yq w --doc 2 things.yaml a.b.d[+] foo
+yq w -d2 things.yaml a.b.d[+] foo
+      
+
+Flags:
+  -d, --doc string      process document index number (0 based, * for all documents) (default "0")
+  -h, --help            help for write
+  -i, --inplace         update the yaml file inplace
+  -s, --script string   yaml script for updating yaml
+
+Global Flags:
+  -t, --trim      trim yaml output (default true)
+  -v, --verbose   verbose mode
+
+
+[31m[ERROR Wed May 29 08:42:10 UTC 2019 | Project: javaempty | File Name: null | Function Name: null | Line Number: null] [39mexecuteBuildScript : 151 | [31m08:42:10 main [ERRO][0m Must provide <filename> <path_to_update> <value>
+
+[32m[INFO Wed May 29 08:42:10 UTC 2019 | Project: javaempty] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 08:42:10 UTC 2019 | Project: javaempty] [39mpingApplications: Application state error message: could not retrieve the port for the project
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mBuilding application container image for javaempty
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 inProgress buildscripts.buildImage  
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state inProgress
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mcurl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "inProgress", "detailedBuildStatus": "buildscripts.buildImage"} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: inProgress, with message: buildscripts.buildImage
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Creating image"
+}
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mSending build context to Docker daemon  91.65kB
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39mStep 1/11 : FROM ibmjava:8-sfj
+
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39m ---> 613e355d91ef
+Step 2/11 : LABEL maintainer="IBM Java Engineering at IBM Cloud"
+[32m[INFO Wed May 29 08:42:12 UTC 2019 | Project: javaempty] [39m
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> 720eed05fd53
+Step 3/11 : ENV JAVA_OPTS=""
+ ---> Using cache
+ ---> 9cf346529471
+Step 4/11 : ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> e8dcdef82594
+Step 5/11 : ENV JAVA_VERSION_PREFIX 1.8.0
+ ---> Using cache
+ ---> 014e1d8dd362
+Step 6/11 : RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64|x86_64)          YML_FILE='sdk/linux/x86_64/index.yml';          ;;        i386)          YML_FILE='sdk/linux/i386/index.yml';          ;;        ppc64el|ppc64le)          YML_FILE='sdk/linux/ppc64le/index.yml';          ;;        s390)          YML_FILE='sdk/linux/s390/index.yml';          ;;        s390x)          YML_FILE='sdk/linux/s390x/index.yml';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     BASE_URL="https://public.dhe.ibm.com/ibmdl/export/pub/systems/cloud/runtimes/java/meta/";     wget -q -U UA_IBM_JAVA_Docker -O /tmp/index.yml ${BASE_URL}/${YML_FILE};     ESUM=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;n;p}' | sed -n 's/\s*sha256sum:\s//p' | tr -d '\r' | tail -1);     JAVA_URL=$(cat /tmp/index.yml | sed -n '/'${JAVA_VERSION_PREFIX}'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r' | tail -1);     wget -q -U UA_IBM_JAVA_Docker -O /tmp/ibm-java.bin ${JAVA_URL};     echo "${ESUM}  /tmp/ibm-java.bin" | sha256sum -c -;     echo "INSTALLER_UI=silent" > /tmp/response.properties;     echo "USER_INSTALL_DIR=/root/java" >> /tmp/response.properties;     echo "LICENSE_ACCEPTED=TRUE" >> /tmp/response.properties;     mkdir -p /root/java;     chmod +x /tmp/ibm-java.bin;     /tmp/ibm-java.bin -i silent -f /tmp/response.properties;     rm -f /tmp/response.properties;     rm -f /tmp/index.yml;     rm -f /tmp/ibm-java.bin;     cd /root/java/jre/lib;     rm -rf icc;
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> cc6507492750
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39mStep 7/11 : RUN mkdir -p /opt/mvn &&    MAVEN_VERSION=$(wget -qO- https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/maven-metadata.xml | sed -n 's/\s*<release>\(.*\)<.*>/\1/p') &&    wget -q -U UA_IBM_JAVA_Docker -O /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz https://search.maven.org/remotecontent?filepath=org/apache/maven/apache-maven/${MAVEN_VERSION}/apache-maven-${MAVEN_VERSION}-bin.tar.gz &&    tar xf /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /opt/mvn &&    mv /opt/mvn/apache-maven-${MAVEN_VERSION} /opt/mvn/apache-maven &&    rm -f /opt/mvn/apache-maven-${MAVEN_VERSION}-bin.tar.gz;
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39mStep 8/11 : RUN mkdir -m 777 -p /config/resources
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> e426b64b7598
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> 0b245fe3e669
+Step 9/11 : ENV JAVA_HOME=/root/java     PATH=/root/java/jre/bin:/opt/mvn/apache-maven/bin:$PATH
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> Using cache
+ ---> b5091895d27d
+Step 10/11 : COPY ./scripts /scripts
+
+[32m[INFO Wed May 29 08:42:13 UTC 2019 | Project: javaempty] [39m ---> ccd10aab6dd8
+Step 11/11 : RUN chmod -R +x /scripts
+
+[32m[INFO Wed May 29 08:42:14 UTC 2019 | Project: javaempty] [39m ---> Running in 89e866d57233
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mRemoving intermediate container 89e866d57233
+ ---> acd34e885d24
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mSuccessfully built acd34e885d24
+Successfully tagged mc-javaempty-a24146d0-81ed-11e9-b0d3:latest
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mBuild image stage succeeded for javaempty
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 inProgress buildscripts.containerBuildSuccess 1559119336000 
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state inProgress
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mcurl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "inProgress", "detailedBuildStatus": "buildscripts.containerBuildSuccess", "appImageLastBuild": "1559119336000"} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: inProgress, with message: buildscripts.containerBuildSuccess
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Container image has been built successfully",
+  "appImageLastBuild": "1559119336000"
+}
+[32m[INFO Wed May 29 08:42:16 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:42:20 UTC 2019 | Project: javaempty] [39mPod name was not found while looking up service information for project.
+[32m[INFO Wed May 29 08:42:20 UTC 2019 | Project: javaempty] [39mThe push refers to repository [mycluster.icp:8500/microclimate/mc-javaempty-a24146d0-81ed-11e9-b0d3]
+
+[32m[INFO Wed May 29 08:42:20 UTC 2019 | Project: javaempty] [39m725561eb72a7: Preparing
+
+[32m[INFO Wed May 29 08:42:20 UTC 2019 | Project: javaempty] [39m5e0511f109f5: Preparing
+7e0dd41a41a9: Preparing
+57270870094b: Preparing
+bec9c480a472: Preparing
+9203c53d432c: Preparing
+db23d2ae4fe4: Preparing
+4c54072a5034: Preparing
+49652298c779: Preparing
+e15278fcccca: Preparing
+739482a9723d: Preparing
+4c54072a5034: Waiting
+db23d2ae4fe4: Waiting
+
+[32m[INFO Wed May 29 08:42:20 UTC 2019 | Project: javaempty] [39m9203c53d432c: Waiting
+49652298c779: Waiting
+
+[32m[INFO Wed May 29 08:42:23 UTC 2019 | Project: javaempty] [39m57270870094b: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:23 UTC 2019 | Project: javaempty] [39m7e0dd41a41a9: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:23 UTC 2019 | Project: javaempty] [39mbec9c480a472: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:24 UTC 2019 | Project: javaempty] [39m725561eb72a7: Pushed
+
+[32m[INFO Wed May 29 08:42:24 UTC 2019 | Project: javaempty] [39m5e0511f109f5: Pushed
+
+[32m[INFO Wed May 29 08:42:24 UTC 2019 | Project: javaempty] [39m9203c53d432c: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+db23d2ae4fe4: 
+[32m[INFO Wed May 29 08:42:24 UTC 2019 | Project: javaempty] [39mMounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:25 UTC 2019 | Project: javaempty] [39m49652298c779: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:25 UTC 2019 | Project: javaempty] [39m4c54072a5034: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:25 UTC 2019 | Project: javaempty] [39me15278fcccca: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:25 UTC 2019 | Project: javaempty] [39m739482a9723d: Mounted from microclimate/mc-java-b122e9e0-81e5-11e9-a2c7
+
+[32m[INFO Wed May 29 08:42:26 UTC 2019 | Project: javaempty] [39mlatest: digest: sha256:1b16525fb6bcd64872ec298207df25155214d5f89e26d6b7edfe7de5bcc99ae9 size: 2621
+
+[32m[INFO Wed May 29 08:42:26 UTC 2019 | Project: javaempty] [39mSuccessfully tagged and pushed the application image mycluster.icp:8500/microclimate/mc-javaempty-a24146d0-81ed-11e9-b0d3
+
+[32m[INFO Wed May 29 08:42:26 UTC 2019 | Project: javaempty] [39mRelease "mc-javaempty-a24146d0-81ed-11e9-b0d3" does not exist. Installing it now.
+
+[32m[INFO Wed May 29 08:42:27 UTC 2019 | Project: javaempty] [39mNAME:   mc-javaempty-a24146d0-81ed-11e9-b0d3
+
+[32m[INFO Wed May 29 08:42:27 UTC 2019 | Project: javaempty] [39mLAST DEPLOYED: Wed May 29 08:42:26 2019
+NAMESPACE: microclimate
+STATUS: DEPLOYED
+
+
+[32m[INFO Wed May 29 08:42:27 UTC 2019 | Project: javaempty] [39mRESOURCES:
+==> v1/Service
+NAME                                  TYPE      CLUSTER-IP   EXTERNAL-IP  PORT(S)         AGE
+mc-javaempty-a24146d0-81ed-11e9-b0d3  NodePort  10.0.68.151  <none>       8080:32046/TCP  1s
+
+==> v1beta1/Deployment
+NAME                                  DESIRED  CURRENT  UP-TO-DATE  AVAILABLE  AGE
+mc-javaempty-a24146d0-81ed-11e9-b0d3  1        1        1           0          0s
+
+==> v1/Pod(related)
+NAME                                                  READY  STATUS             RESTARTS  AGE
+mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s  0/1    ContainerCreating  0         0s
+
+
+
+[32m[INFO Wed May 29 08:42:27 UTC 2019 | Project: javaempty] [39mHelm install successful for javaempty
+
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mFound the pod while looking up service information for project.
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mPod name: mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mInternal port: 8080
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mExposed port: 32046
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mAll the exposed pod ports: ["8080"]
+[32m[INFO Wed May 29 08:42:30 UTC 2019 | Project: javaempty] [39mIP address info: 172.17.221.38
+[32m[INFO Wed May 29 08:42:31 UTC 2019 | Project: javaempty] [39mpingApplications: Application state error message: Http request is failed due to timeout error
+[32m[INFO Wed May 29 08:42:32 UTC 2019 | Project: javaempty] [39mThe pod for helm release mc-javaempty-a24146d0-81ed-11e9-b0d3 is now up
+
+[32m[INFO Wed May 29 08:42:33 UTC 2019 | Project: javaempty] [39mmc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s
+
+[32m[INFO Wed May 29 08:42:33 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 inProgress buildscripts.buildMaven  
+
+[32m[INFO Wed May 29 08:42:33 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state inProgress
+
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39mcurl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "inProgress", "detailedBuildStatus": "buildscripts.buildMaven"} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: inProgress, with message: buildscripts.buildMaven
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Running maven build"
+}
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39mLOG_NAME=mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+FOLDER_NAME=javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+PROJECT_NAME=javaempty
+
+[32m[INFO Wed May 29 08:42:34 UTC 2019 | Project: javaempty] [39mRunning Maven build for javaempty
+
+[32m[INFO Wed May 29 08:43:02 UTC 2019 | Project: javaempty] [39mMaven build successful for javaempty
+
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 success    
+
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state success
+Starting the javaempty project in run mode
+curl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "success", "detailedBuildStatus": " "} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mValidating project: {"projectType":"spring","location":"/microclimate-workspace/javaempty","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619"} using operationId: 98e09936a1c247d5736152f77a7524d2
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mChecking for required files
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mChecking for required file /Dockerfile
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mChecking for required file /pom.xml
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: success, with message:  
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "lastbuild": 1559119383167
+}
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mKicking off validation for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mSending validation result
+[32m[INFO Wed May 29 08:43:03 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectValidated
+ data: {
+  "operationId": "98e09936a1c247d5736152f77a7524d2",
+  "projectType": "spring",
+  "location": "/microclimate-workspace/javaempty",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "results": []
+}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mPROJECT_NAME=javaempty
+START_MODE=run
+DEBUG_PORT=
+Starting Spring application: javaempty in mode: run
+
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mThe container was started successfully for application /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mThe project location for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state starting
+
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mFound the pod while looking up service information for project.
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mPod name: mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: stopped, to: starting
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "starting"
+}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mInternal port: 8080
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mExposed port: 32046
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mAll the exposed pod ports: ["8080"]
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mIP address info: 172.17.221.38
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mFound container information: {"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","ip":"172.17.221.38","exposedPort":"32046","internalPort":"8080","podPorts":["8080"]}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mbuildlog path:
+ {"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mapplog path:
+undefined
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}"}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mEmitted event: projectCreation
+{"operationId":"426c04914d98f8483bdd470bb8490295","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619","status":"success","host":"172.17.221.38","ports":{"exposedPort":"32046","internalPort":"8080"},"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","logs":{"build":{"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}}}
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mObject projects do not specify app logs.
+[32m[INFO Wed May 29 08:43:04 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectCreation
+ data: {
+  "operationId": "426c04914d98f8483bdd470bb8490295",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "32046",
+    "internalPort": "8080"
+  },
+  "podName": "mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s",
+  "logs": {
+    "build": {
+      "origin": "workspace",
+      "file": "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log",
+      "files": [
+        "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"
+      ]
+    }
+  }
+}
+[32m[INFO Wed May 29 08:43:05 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state error message: Http request is failed due to timeout error
+[32m[INFO Wed May 29 08:43:18 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 has changed from starting to started
+[32m[INFO Wed May 29 08:43:18 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "started"
+}
+[32m[INFO Wed May 29 08:45:59 UTC 2019 | Project: javaempty] [39mBuild completed for a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mUpdating container for spring project /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mThe log name for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mContainer name: mc-javaempty-a24146d0-81ed-11e9-b0d3
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mLog name: mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mforceAction: undefined
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mIn K8 environment: true
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mNow tracking running process 1160 for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39m*** JAVA
+*** PWD = /server
+*** ROOT = /microclimate-workspace/javaempty
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** PROJECT_ID = a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** COMMAND = update
+*** CONTAINER_NAME = mc-javaempty-a24146d0-81ed-11e9-b0d3
+*** START_MODE = run
+*** DEBUG_PORT = 7777
+*** FOLDER_NAME = javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** LOG_FOLDER = /microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mproject=mc-javaempty-a24146d0-81ed-11e9-b0d3
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mlogName: mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+folderName: javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+projectName: javaempty
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state stopping
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 inProgress buildscripts.buildMaven  
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state inProgress
+curl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "inProgress", "detailedBuildStatus": "buildscripts.buildMaven"} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: started, to: stopping
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopping"
+}
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: success, to: inProgress, with message: buildscripts.buildMaven
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Running maven build"
+}
+[32m[INFO Wed May 29 09:00:49 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:00:51 UTC 2019 | Project: javaempty] [39mLOG_NAME=mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+FOLDER_NAME=javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+PROJECT_NAME=javaempty
+
+[32m[INFO Wed May 29 09:00:51 UTC 2019 | Project: javaempty] [39mRunning Maven build for javaempty
+
+[32m[INFO Wed May 29 09:00:53 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopped"
+}
+[32m[INFO Wed May 29 09:00:53 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state error message: Error: connect ECONNREFUSED 172.17.221.38:32046
+[32m[INFO Wed May 29 09:00:53 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 has changed from stopping to stopped
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mMaven build successful for javaempty
+
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 success    
+
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state success
+curl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "success", "detailedBuildStatus": " "} https://localhost:9091/api/v1/projects/internal/status/buildState
+Starting the javaempty project in run mode
+
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mValidating project: {"projectType":"spring","location":"/microclimate-workspace/javaempty","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619"} using operationId: 103aff1827f29ee54ebbb834af0df82a
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mChecking for required files
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mChecking for required file /Dockerfile
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mChecking for required file /pom.xml
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: success, with message:  
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "lastbuild": 1559120458457
+}
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mKicking off validation for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mSending validation result
+[32m[INFO Wed May 29 09:00:58 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectValidated
+ data: {
+  "operationId": "103aff1827f29ee54ebbb834af0df82a",
+  "projectType": "spring",
+  "location": "/microclimate-workspace/javaempty",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "results": []
+}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mPROJECT_NAME=javaempty
+START_MODE=run
+DEBUG_PORT=
+Starting Spring application: javaempty in mode: run
+
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state starting
+
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mThe container was started successfully for application /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mThe project location for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mFound the pod while looking up service information for project.
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mPod name: mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: stopped, to: starting
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "starting"
+}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mInternal port: 8080
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mAll the exposed pod ports: ["8080"]
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mExposed port: 32046
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mIP address info: 172.17.221.38
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mFound container information: {"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","ip":"172.17.221.38","exposedPort":"32046","internalPort":"8080","podPorts":["8080"]}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mbuildlog path:
+ {"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mapplog path:
+undefined
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mEmitted event: projectChanged
+{"operationId":"21914680736a6696de9b9ed7c2808ea9","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619","status":"success","host":"172.17.221.38","ports":{"exposedPort":"32046","internalPort":"8080"},"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","logs":{"build":{"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}}}
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mObject projects do not specify app logs.
+[32m[INFO Wed May 29 09:00:59 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectChanged
+ data: {
+  "operationId": "21914680736a6696de9b9ed7c2808ea9",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "32046",
+    "internalPort": "8080"
+  },
+  "podName": "mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s",
+  "logs": {
+    "build": {
+      "origin": "workspace",
+      "file": "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log",
+      "files": [
+        "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"
+      ]
+    }
+  }
+}
+[32m[INFO Wed May 29 09:01:01 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state error message: Error: connect ECONNREFUSED 172.17.221.38:32046
+[32m[INFO Wed May 29 09:01:09 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 has changed from starting to started
+[32m[INFO Wed May 29 09:01:09 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "started"
+}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mUpdating container for spring project /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mThe log name for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mContainer name: mc-javaempty-a24146d0-81ed-11e9-b0d3
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mLog name: mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mforceAction: undefined
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mIn K8 environment: true
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mNow tracking running process 1306 for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39m*** JAVA
+*** PWD = /server
+*** ROOT = /microclimate-workspace/javaempty
+*** LOCAL_WORKSPACE = /microclimate-workspace
+*** PROJECT_ID = a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** COMMAND = update
+*** CONTAINER_NAME = mc-javaempty-a24146d0-81ed-11e9-b0d3
+*** START_MODE = run
+*** DEBUG_PORT = 7777
+*** FOLDER_NAME = javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+*** LOG_FOLDER = /microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mproject=mc-javaempty-a24146d0-81ed-11e9-b0d3
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mlogName: mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+folderName: javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mprojectName: javaempty
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state stopping
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 inProgress buildscripts.buildMaven  
+Sending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state inProgress
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mcurl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "inProgress", "detailedBuildStatus": "buildscripts.buildMaven"} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: started, to: stopping
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopping"
+}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: success, to: inProgress, with message: buildscripts.buildMaven
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "inProgress",
+  "detailedBuildStatus": "Running maven build"
+}
+[32m[INFO Wed May 29 09:01:29 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:01:30 UTC 2019 | Project: javaempty] [39mLOG_NAME=mc-a24146d0-81ed-11e9-b0d3-6dfb45e8d619-7b05a337ba75e
+FOLDER_NAME=javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+PROJECT_NAME=javaempty
+
+[32m[INFO Wed May 29 09:01:30 UTC 2019 | Project: javaempty] [39mRunning Maven build for javaempty
+
+[32m[INFO Wed May 29 09:01:31 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 has changed from stopping to stopped
+[32m[INFO Wed May 29 09:01:31 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "stopped"
+}
+[32m[INFO Wed May 29 09:01:31 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state error message: Error: connect ECONNREFUSED 172.17.221.38:32046
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mMaven build successful for javaempty
+
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mupdateBuildState a24146d0-81ed-11e9-b0d3-6dfb45e8d619 success    
+
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mSending update build state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state success
+Starting the javaempty project in run mode
+curl -sS -k -X POST -H Content-Type: application/json -d {"projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619", "buildStatus": "success", "detailedBuildStatus": " "} https://localhost:9091/api/v1/projects/internal/status/buildState
+
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mValidating project: {"projectType":"spring","location":"/microclimate-workspace/javaempty","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619"} using operationId: c3dbbf9d38d2d3ebbcb4df3085c15e0b
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mChecking for required files
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mChecking for required file /Dockerfile
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mChecking for required file /pom.xml
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mBuild state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: inProgress, to: success, with message:  
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "lastbuild": 1559120497556
+}
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mKicking off validation for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mSending validation result
+[32m[INFO Wed May 29 09:01:37 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectValidated
+ data: {
+  "operationId": "c3dbbf9d38d2d3ebbcb4df3085c15e0b",
+  "projectType": "spring",
+  "location": "/microclimate-workspace/javaempty",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "results": []
+}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mPROJECT_NAME=javaempty
+START_MODE=run
+DEBUG_PORT=
+Starting Spring application: javaempty in mode: run
+
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mThe container was started successfully for application /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mThe project location for a24146d0-81ed-11e9-b0d3-6dfb45e8d619 is /microclimate-workspace/javaempty
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mSending update state post for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 and state starting
+
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mFound the pod while looking up service information for project.
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mPod name: mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mInternal port: 8080
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mExposed port: 32046
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mAll the exposed pod ports: ["8080"]
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mApplication state changed for project: a24146d0-81ed-11e9-b0d3-6dfb45e8d619 from: stopped, to: starting
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "starting"
+}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mIP address info: 172.17.221.38
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mFound container information: {"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","ip":"172.17.221.38","exposedPort":"32046","internalPort":"8080","podPorts":["8080"]}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mbuildlog path:
+ {"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mapplog path:
+undefined
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39m{"/fwdata/projects/a24146d0-81ed-11e9-b0d3-6dfb45e8d619/a24146d0-81ed-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"a24146d0-81ed-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"spring\",\"location\":\"/microclimate-workspace/javaempty\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[8080,\"8080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":true}","/fwdata/projects/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619/2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619.json":"{\"projectID\":\"2e6d37e0-81ee-11e9-b0d3-6dfb45e8d619\",\"projectType\":\"liberty\",\"location\":\"/microclimate-workspace/javaee\",\"autoBuildEnabled\":true,\"startMode\":\"run\",\"appPorts\":[9080,\"9080\"],\"debugPort\":\"7777\",\"buildRequest\":false,\"sentProjectInfo\":false}"}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mEmitted event: projectChanged
+{"operationId":"0df1c2077db48b077062e8ad329f13d1","projectID":"a24146d0-81ed-11e9-b0d3-6dfb45e8d619","status":"success","host":"172.17.221.38","ports":{"exposedPort":"32046","internalPort":"8080"},"podName":"mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s","logs":{"build":{"origin":"workspace","file":"/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log","files":["/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"]}}}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39m{"status":"OK"}
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mObject projects do not specify app logs.
+[32m[INFO Wed May 29 09:01:38 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectChanged
+ data: {
+  "operationId": "0df1c2077db48b077062e8ad329f13d1",
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "status": "success",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "32046",
+    "internalPort": "8080"
+  },
+  "podName": "mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s",
+  "logs": {
+    "build": {
+      "origin": "workspace",
+      "file": "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log",
+      "files": [
+        "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"
+      ]
+    }
+  }
+}
+[32m[INFO Wed May 29 09:01:39 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state error message: Error: connect ECONNREFUSED 172.17.221.38:32046
+[32m[INFO Wed May 29 09:01:49 UTC 2019 | Project: javaempty] [39mEmitting event over socket 
+ message: projectStatusChanged
+ data: {
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "appStatus": "started"
+}
+[32m[INFO Wed May 29 09:01:49 UTC 2019 | Project: javaempty] [39mpingInTransitApplications: Application state for project a24146d0-81ed-11e9-b0d3-6dfb45e8d619 has changed from starting to started

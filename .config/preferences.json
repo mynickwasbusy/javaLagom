@@ -1,0 +1,8 @@
+{
+  "telemetry": {
+    "enabled": true
+  },
+  "theia": {
+    "show-all-projects": true
+  }
+}

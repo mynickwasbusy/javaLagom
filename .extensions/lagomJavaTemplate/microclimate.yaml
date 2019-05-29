@@ -1,0 +1,27 @@
+extensionId: lagomJavaTemplate  # This needs to be unique
+buildType: docker 
+language: java
+creationType: template
+info:
+  provider: IBM
+  version: 0.0.1
+
+# Information to display in the UI  
+userInterface:
+    label: Lagom
+    description: Template for building Lagom Reactive microservice in Java
+
+# Specify location of template code, either gitURL or location relative
+# to this .yaml file
+template:
+  giturl: https://github.com/microclimate-dev2ops/lagomJavaTemplate
+  gitbranch: master
+  localpath:
+
+# Additional details about the application
+application:
+  port: 9000  # The port the application runs on
+  contextroot: api/hello/world
+
+
+

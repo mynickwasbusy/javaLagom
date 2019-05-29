@@ -1,0 +1,97 @@
+Sending build context to Docker daemon  69.63kB
+Step 1/7 : FROM python:3.4-alpine
+3.4-alpine: Pulling from library/python
+8e402f1a9c57: Pulling fs layer
+cda9ba2397ef: Pulling fs layer
+aafecf9bbbfd: Pulling fs layer
+bc2e7e266629: Pulling fs layer
+e1977129b756: Pulling fs layer
+bc2e7e266629: Waiting
+e1977129b756: Waiting
+cda9ba2397ef: Verifying Checksum
+cda9ba2397ef: Download complete
+8e402f1a9c57: Verifying Checksum
+8e402f1a9c57: Download complete
+bc2e7e266629: Verifying Checksum
+8e402f1a9c57: Pull complete
+cda9ba2397ef: Pull complete
+e1977129b756: Verifying Checksum
+e1977129b756: Download complete
+aafecf9bbbfd: Verifying Checksum
+aafecf9bbbfd: Download complete
+aafecf9bbbfd: Pull complete
+bc2e7e266629: Pull complete
+e1977129b756: Pull complete
+Digest: sha256:c210b660e2ea553a7afa23b41a6ed112f85dbce25cbcb567c75dfe05342a4c4b
+Status: Downloaded newer image for python:3.4-alpine
+ ---> c06adcf62f6e
+Step 2/7 : ADD . /code
+ ---> ed72215e631e
+Step 3/7 : WORKDIR /code
+Removing intermediate container 835e0faa60b0
+ ---> bf6e66a1d90e
+Step 4/7 : RUN pip install flask
+ ---> Running in 37c8fc81d4ef
+[91mDEPRECATION: Python 3.4 support has been deprecated. pip 19.1 will be the last one supporting it. Please upgrade your Python as Python 3.4 won't be maintained after March 2019 (cf PEP 429).
+[0mCollecting flask
+  Downloading https://files.pythonhosted.org/packages/9a/74/670ae9737d14114753b8c8fdf2e8bd212a05d3b361ab15b44937dfd40985/Flask-1.0.3-py2.py3-none-any.whl (92kB)
+Collecting Werkzeug>=0.14 (from flask)
+  Downloading https://files.pythonhosted.org/packages/9f/57/92a497e38161ce40606c27a86759c6b92dd34fcdb33f64171ec559257c02/Werkzeug-0.15.4-py2.py3-none-any.whl (327kB)
+Collecting Jinja2>=2.10 (from flask)
+  Downloading https://files.pythonhosted.org/packages/1d/e7/fd8b501e7a6dfe492a433deb7b9d833d39ca74916fa8bc63dd1a4947a671/Jinja2-2.10.1-py2.py3-none-any.whl (124kB)
+Collecting itsdangerous>=0.24 (from flask)
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting click>=5.1 (from flask)
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+Collecting MarkupSafe>=0.23 (from Jinja2>=2.10->flask)
+  Downloading https://files.pythonhosted.org/packages/b9/2e/64db92e53b86efccfaea71321f597fa2e1b2bd3853d8ce658568f7a13094/MarkupSafe-1.1.1.tar.gz
+Building wheels for collected packages: MarkupSafe
+  Building wheel for MarkupSafe (setup.py): started
+  Building wheel for MarkupSafe (setup.py): finished with status 'done'
+  Stored in directory: /root/.cache/pip/wheels/f2/aa/04/0edf07a1b8a5f5f1aed7580fffb69ce8972edc16a505916a77
+Successfully built MarkupSafe
+Installing collected packages: Werkzeug, MarkupSafe, Jinja2, itsdangerous, click, flask
+Successfully installed Jinja2-2.10.1 MarkupSafe-1.1.1 Werkzeug-0.15.4 click-7.0 flask-1.0.3 itsdangerous-1.1.0
+[91mYou are using pip version 19.0.3, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+[0mRemoving intermediate container 37c8fc81d4ef
+ ---> f3016b8ed146
+Step 5/7 : CMD ["python", "app.py"]
+ ---> Running in 19a1a3a92d81
+Removing intermediate container 19a1a3a92d81
+ ---> cd60fe8b682d
+Step 6/7 : EXPOSE 5000
+ ---> Running in ff7278b34bcb
+Removing intermediate container ff7278b34bcb
+ ---> 8a031a49ee4b
+Step 7/7 : LABEL "builtBy"='microclimate'
+ ---> Running in a0567f284253
+Removing intermediate container a0567f284253
+ ---> 91a245c09e69
+Successfully built 91a245c09e69
+Successfully tagged mc-py-cad6c6a0-81f3-11e9-b0d3:latest
+
+Wed May 29 09:26:43 UTC 2019
+
+Release "mc-py-cad6c6a0-81f3-11e9-b0d3" does not exist. Installing it now.
+NAME:   mc-py-cad6c6a0-81f3-11e9-b0d3
+LAST DEPLOYED: Wed May 29 09:26:51 2019
+NAMESPACE: microclimate
+STATUS: DEPLOYED
+
+RESOURCES:
+==> v1/Service
+NAME                           TYPE      CLUSTER-IP   EXTERNAL-IP  PORT(S)         AGE
+mc-py-cad6c6a0-81f3-11e9-b0d3  NodePort  10.0.58.239  <none>       5000:30395/TCP  0s
+
+==> v1beta1/Deployment
+NAME                           DESIRED  CURRENT  UP-TO-DATE  AVAILABLE  AGE
+mc-py-cad6c6a0-81f3-11e9-b0d3  1        1        1           0          0s
+
+==> v1/Pod(related)
+NAME                                            READY  STATUS             RESTARTS  AGE
+mc-py-cad6c6a0-81f3-11e9-b0d3-6666f9b757-nr9gf  0/1    ContainerCreating  0         0s
+
+
+
+Wed May 29 09:26:51 UTC 2019

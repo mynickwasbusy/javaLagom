@@ -1,0 +1,47 @@
+{
+  "projectID": "a24146d0-81ed-11e9-b0d3-6dfb45e8d619",
+  "name": "javaempty",
+  "microclimateVersion": "19.03",
+  "language": "java",
+  "host": "172.17.221.38",
+  "ports": {
+    "exposedPort": "32046",
+    "internalPort": "8080"
+  },
+  "applicationPort": 8080,
+  "workspace": "/microclimate-workspace/admin/",
+  "directory": "javaempty",
+  "infLockFlag": true,
+  "locOnDisk": "/microclimate-workspace/javaempty",
+  "loadTestPath": "/microclimate-workspace/admin/javaempty/load-test",
+  "startMode": "run",
+  "buildType": "spring",
+  "buildLogPath": "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log",
+  "state": "open",
+  "autoBuild": true,
+  "exporter": {
+    "workspace": "/microclimate-workspace/admin/javaempty",
+    "git": {},
+    "secure": true
+  },
+  "metricsAvailable": true,
+  "buildStatus": "success",
+  "detailedBuildStatus": " ",
+  "appStatus": "started",
+  "appImageLastBuild": "1559119336000",
+  "lastbuild": 1559120497556,
+  "projectType": "spring",
+  "location": "/microclimate-workspace/javaempty",
+  "validationStatus": "success",
+  "validationResults": [],
+  "podName": "mc-javaempty-a24146d0-81ed-11e9-b0d3-c69d64d9d-kxn8s",
+  "logs": {
+    "build": {
+      "origin": "workspace",
+      "file": "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log",
+      "files": [
+        "/microclimate-workspace/.logs/javaempty-a24146d0-81ed-11e9-b0d3-6dfb45e8d619/maven.build.log"
+      ]
+    }
+  }
+}

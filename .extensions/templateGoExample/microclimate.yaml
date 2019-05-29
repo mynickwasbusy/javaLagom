@@ -1,0 +1,24 @@
+extensionId: templateGoExample # This needs to be unique
+buildType: docker
+language: go
+creationType: template
+info:
+  provider: IBM
+  version: 0.0.1
+
+# Information to display in the UI 
+userInterface:
+    label: Go sample template
+    description: Sample microservice for simple go app
+
+# Specify location of template code, either gitURL or location relative
+# to this .yaml file
+template:
+  giturl: https://github.com/microclimate-dev2ops/microclimateGoTemplate
+  gitbranch: master
+  localpath: 
+
+# Additional details about the application
+application:
+  port: 8000  # The port the application runs on
+
